@@ -3,10 +3,11 @@
 ## prerequis
 En premier lieu, installer symfony cli ( permet d'utiliser des commande symfony ) avec cette commande dans n'importe quel dossier :
 
-    - `curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash`
+`curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash`
+
  ----- puis ----
 
-    - `sudo apt install symfony-cli`
+`sudo apt install symfony-cli`
 
 ## Cloner le depot le projet symfony
 
