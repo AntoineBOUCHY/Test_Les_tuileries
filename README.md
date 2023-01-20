@@ -23,9 +23,9 @@ Aller à la racine du projet puis faire `composer install`
 
  - Lancer VSC
  - Créer un fichier nomé `.env.local` au même niveau que le fichier existant `.env` à la base du projet
- - Coller dans ce fichier `DATABASE_URL="mysql://explorateur:Ereul9Aeng@127.0.0.1:3306/NomDuProjet?servverVersion=10.3.25-MariaDB"` et remplacer "NomduProjet" par le nom que vous voulez en base de données.
+ - Coller dans ce fichier `DATABASE_URL="mysql://explorateur:Ereul9Aeng@127.0.0.1:3306/NomDuProjet?serverVersion=10.3.25-MariaDB"` et remplacer "NomduProjet" par le nom que vous voulez en base de données.
 
-- Dans votre terminal à la racine du projet, lancer `bin/console d:d:c` puis `bin/console ma:mi` et repondre yes  et entrer
+- Dans votre terminal à la racine du projet, lancer `bin/console d:d:c` 
 - Puis enfin `bin/console d:m:m` et repondre yes
   (possibles erreurs mais ne pas en tenir compte, dû à 2 mirgation qui se contredi mais le resultat final est bon)
 

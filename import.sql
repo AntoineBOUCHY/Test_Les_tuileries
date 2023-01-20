@@ -8,14 +8,7 @@ SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 SET NAMES utf8mb4;
 
 
-INSERT INTO `doctrine_migration_versions` (`version`, `executed_at`, `execution_time`) VALUES
-('DoctrineMigrations\\Version20230117144115',	'2023-01-17 15:42:57',	147),
-('DoctrineMigrations\\Version20230117145227',	'2023-01-17 15:52:53',	35),
-('DoctrineMigrations\\Version20230117152147',	'2023-01-17 16:21:56',	78),
-('DoctrineMigrations\\Version20230117170641',	'2023-01-18 17:22:19',	122),
-('DoctrineMigrations\\Version20230117172117',	'2023-01-18 17:22:19',	10),
-('DoctrineMigrations\\Version20230118091020',	'2023-01-18 17:22:19',	17),
-('DoctrineMigrations\\Version20230118162209',	'2023-01-18 17:27:29',	42);
+
 
 INSERT INTO `language` (`id`, `country`) VALUES
 (1,	'fr'),
