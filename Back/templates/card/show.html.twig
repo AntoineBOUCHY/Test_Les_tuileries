@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Card{% endblock %}
+
+{% block body %}
+    <h1>Détail de la carte</h1>
+
+    <pr>{{ card.id }}{{ card.sold }}{{ card.boughtAt ? card.boughtAt|date('Y-m-d H:i:s') : '' }}{{ card.usedAt ? card.usedAt|date('Y-m-d H:i:s') : '' }}{{ card.giftTo }}{{ card.limitedDate ? card.limitedDate|date('Y-m-d H:i:s') : '' }}</td></pr>
+            
+
+    <a href="{{ path('app_card_index') }}">back to list</a>
+
+    <a href="{{ path('app_card_edit', {'id': card.id}) }}">edit</a>
+
+    {{ include('card/_delete_form.html.twig') }}
+{% endblock %}

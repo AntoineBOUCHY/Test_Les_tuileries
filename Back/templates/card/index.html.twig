@@ -1,0 +1,47 @@
+{% extends 'backoffice.html.twig' %}
+
+{% block title %}Historique{% endblock %}
+
+{% block body %}
+    <h1>Historique carte d'achat</h1>
+
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+      <th scope="col">Bénificiare</th>
+      <th scope="col">Montant</th>
+      <th scope="col">Acheté le</th>
+      <th scope="col">utlisé le</th>
+      <th scope="col">Etat</th>
+      <th scope="col">modifier</th>                
+            </tr>
+        </thead>
+        <tbody>
+        {% for card in cards %}
+            <tr>
+                <th scope="row">{{ card.id }}</th>
+                <td>{{ card.giftTo }}</td>
+                <td>{{ card.sold }}</td>
+                <td>{{ card.boughtAt ? card.boughtAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ card.usedAt ? card.usedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td></td>
+                <td><a href="{{ path('app_card_show', {'id': card.id}) }}">show</a></td>
+                
+                
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_card_new') }}">Create new</a>
+{% endblock %}
+
+
+
+
+
